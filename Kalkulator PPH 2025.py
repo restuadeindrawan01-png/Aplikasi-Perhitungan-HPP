@@ -16,7 +16,7 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 def format_rp(angka):
     return f"Rp {angka:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
 
-st.title("📊 SISTEM AKUNTANSI BIAYA")
+st.title("📊 APLIKASI AKUNTANSI BIAYA")
 st.info("Pilih metode perhitungan pada tab di bawah ini.")
 
 tab1, tab2 = st.tabs(["📋 Job Order Costing", "🏭 Process Costing"])
@@ -110,4 +110,5 @@ with tab2:
             st.write("*Unit Ekuivalen (UE):*")
             st.latex(r"UE = Jadi + (PDP \times \% TP)")
             st.write("*Biaya per Unit:*")
+
             st.latex(r"Biaya/Unit = \frac{Total Biaya Unsur}{UE Unsur}")
