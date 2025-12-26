@@ -107,8 +107,9 @@ with tab2:
             st.metric("Total Biaya Per Unit", format_rp(total_unit_cost))
 
         with st.expander("Lihat Rumus & Logika"):
-            st.write("**Unit Ekuivalen (UE):**")
+            st.write("*Unit Ekuivalen (UE):*")
             st.latex(r"UE = Jadi + (PDP \times \% TP)")
             st.write("*Biaya per Unit:*")
 
             st.latex(r"Biaya/Unit = \frac{Total Biaya Unsur}{UE Unsur}")
+
