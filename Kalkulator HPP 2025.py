@@ -95,7 +95,7 @@ with tab2:
         col_res1, col_res2 = st.columns(2)
         with col_res1:
             st.info(f"Total Biaya Produksi: {format_rp(cost_bbb + cost_bbp + cost_btk + cost_bop)}")
-            st.write(f"*Unit Ekuivalen:*")
+            st.write(f"*Unit Ekuivalen:**")
             st.write(f"- BBB: {ue_bbb} unit")
             st.write(f"- BBP: {ue_bbp} unit")
             st.write(f"- BTK: {ue_btk} unit")
@@ -112,3 +112,4 @@ with tab2:
             st.write("*Biaya per Unit:*")
 
             st.latex(r"Biaya/Unit = \frac{Total Biaya Unsur}{UE Unsur}")
+
